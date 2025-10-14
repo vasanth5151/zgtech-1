@@ -1,0 +1,28 @@
+/*[ hun-tab ]
+//////////////////////////////////////////////////////////////////*/
+
+@keyframes hunFadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.js-call-hun-tab {
+    .panel-hun-tab {
+        display: none;
+
+        &.active {
+            display: block;
+            animation: hunFadeIn 1s forwards;
+        }
+    }
+}

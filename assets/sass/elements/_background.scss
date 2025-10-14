@@ -1,0 +1,113 @@
+/*[ hun-element-background ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Type 1
+ *
+\*/
+.parent-hun-element-background--type-1 {
+	position: relative;
+	z-index: 0;
+}
+
+.hun-element-background--type-1 {
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: calc(100% + 3px);
+	top: 0;
+	left: 0;
+	transform: rotateY(180deg);
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -1;
+		width: 10000px !important;
+		height: 3000px !important;
+		bottom: 0px;
+		left: calc(30% + 68px);
+		background-color: transparent;
+		transform-origin: bottom left;
+		transform: skew(65deg, -9deg);
+		border-bottom-left-radius: 2.4% !important;
+		box-shadow: 0px 0px 0px 10000px #fff;
+		filter: drop-shadow(0px 0px 0px transparent);
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: -2;
+		width: 10000px !important;
+		height: 3000px !important;
+		bottom: 31px;
+		left: 30%;
+		background-color: rgba($main-color-02-R, $main-color-02-G, $main-color-02-B, .85);
+		transform-origin: bottom left;
+		transform: skew(65deg, -9deg);
+		border-bottom-left-radius: 2.4% !important;
+		box-shadow: 0px 0px 0px 10000px mix(white, $main-color-01, 51%);
+		filter: drop-shadow(0px 0px 0px transparent);
+	}
+
+	&.reverse {
+		transform: none;
+
+		&::before {
+			left: calc(30% - 83px);
+		}
+
+		&::after {
+			bottom: 12px;
+		}
+	}
+
+	&.style-dark {
+		&::before {
+			z-index: -3;
+			background-color: $main-color-01;
+			opacity: .5;
+			box-shadow: none !important;
+		}
+
+		&::after {
+			background-color: $main-color-02;
+			box-shadow: none !important;
+		}
+	}
+
+	&.style-light {
+		&::before {
+			z-index: -3;
+			background-color: $main-color-01;
+			opacity: .5;
+			box-shadow: none !important;
+		}
+
+		&::after {
+			background-color: mix(white, $main-color-01, 92%);
+			box-shadow: none !important;
+		}
+	}
+}
+
+.set-bg-light {
+	.hun-element-background--type-1 {
+		&::before {
+			box-shadow: 0px 0px 0px 10000px mix(white, $main-color-01, 95%);
+		}
+	}
+}
+
+.set-bg-dark {
+	.hun-element-background--type-1 {
+		&::before {
+			box-shadow: 0px 0px 0px 10000px $main-color-02;
+		}
+	}
+}

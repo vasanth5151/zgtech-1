@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Redirect</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="assets/images/icons/zg_logo.png"/>
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/ionicons/css/ionicons.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons/css/simple-line-icons.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-1.9.0.css">
+	<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/libs/magnific-popup/magnific-popup.css">
+	<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/libs/animate/animate.css">
+	<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/libs/animsition/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/libs/parallax100/parallax100.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--===============================================================================================-->
+
+</head>
+<body class="animsition">
+
+<div class="hun-page">
+	
+	
+
+	<!-- 404 -->
+	<div class="hun-section-404 layout-1 p-t-180 p-b-130">
+		<div class="inner-section">
+			<div class="container">
+				<div class="pic-sec">
+					<img src="assets/images/icons/zg_logo.png" alt="IMG">
+				</div>
+				<div class="text-sec">
+					<div style="font-weight: 800;font-size: 22px;" class="description">
+						Nexus Global Solutions is now Zero Gravity Technologies
+					</div>
+
+					<div style="margin-top: 15px;" class="description">
+						Zero Gravity Technologies Welcomes you! We look forward to working with you.
+					</div>
+					<h4 id="redirect" class="p-t-20">						 
+					</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end 404 -->
+
+	
+</div>
+
+<script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+
+<script src="assets/libs/animsition/animsition.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+
+<!--<script type="text/javascript">
+
+     setTimeout(function(){
+            window.location.href = 'https://zerogravitytechnologies.com';
+         }, 5000);
+</script>-->
+<script type="text/javascript">
+
+var count = 5;
+  var countdown = setInterval(function(){
+    $("#redirect").html(count + " seconds remaining!");
+    if (count == 0) {
+      clearInterval(countdown);
+      window.open('https://zerogravitytechnologies.com/', "_self");
+    }
+    count--;
+  }, 1000);
+
+</script>
+</body>
+</html>

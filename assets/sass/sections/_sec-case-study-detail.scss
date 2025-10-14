@@ -1,0 +1,132 @@
+/*[ hun-section-case-study-detail ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-case-study-detail.layout-1 {
+	.inner-section {
+		.content-sec {
+			padding-left: 30px;
+
+			@media (max-width: 991px) {
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+		}
+
+		.col-sidebar {
+			@media (max-width: 991px) {
+				padding-bottom: 35px;
+			}
+		}
+	}
+
+	&.sidebar-right {
+		.inner-section {
+			& > .container > .row {
+				flex-direction: row-reverse;
+			}
+
+			.content-sec {
+				padding-left: 0px;
+				padding-right: 30px;
+			}
+		}
+	}
+
+	&.no-sidebar {
+		.inner-section {
+			.col-content {
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+
+			.col-sidebar {
+				display: none;
+			}
+
+			.content-sec {
+				padding-right: 0px;
+				padding-left: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.pic-case {
+		margin-bottom: 40px;
+
+		img {
+			width: 100%;
+			border-radius: 10px;
+		}
+	}
+
+	.info-case {
+		padding: 75px 25px 30px 25px;
+		border-radius: 10px;
+		background-color: #fff;
+		box-shadow: 6px 8px 20px 0px rgba(0, 0, 0, 0.1);
+		position: relative;
+		margin-top: 40px;
+
+		.brand {
+			pointer-events: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: -40px;
+			left: 25px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			padding: 13px;
+			background-color: #fff;
+			box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+
+			img {
+				width: auto;
+				min-height: 0%;
+				min-width: 0%;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		.title-info {
+			font-size: 24px;
+			line-height: 1.4;
+			color: $main-color-01;
+			margin-bottom: 24px;
+		}
+
+		.list-info {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+
+			li {
+				margin-bottom: 26px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				.name-info {
+					font-weight: 700;
+					color: $title-color-01;
+					display: block;
+				}
+			}
+		}
+	}
+
+	.content-case {
+		margin-top: 35px;
+	}
+}

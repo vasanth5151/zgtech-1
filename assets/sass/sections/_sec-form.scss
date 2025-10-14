@@ -1,0 +1,15 @@
+/*[ hun-section-form ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-form.layout-1 {
+	.col-form {
+		@media (min-width: 992px) {
+			padding-left: 85px;
+		}
+	}
+}

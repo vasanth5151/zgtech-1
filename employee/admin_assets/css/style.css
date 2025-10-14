@@ -1,0 +1,395 @@
+@charset "utf-8";
+.inv
+{
+	display:none;
+}
+tr.hover td:hover
+{
+	cursor: pointer !important;
+	background-color: yellow !important;
+}
+.form-control
+{
+	padding:5px !important;
+}
+.select2, .select2 .selection
+{
+	width:100% !important;
+	display: block;
+	height:auto !important;
+}
+.la-close, .la-trash
+{
+	cursor:pointer;
+	font-weight:bold;
+}
+.paybal
+{
+	padding-top:20px;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn)
+{
+	width:100%;
+}
+.btn.dropdown-toggle
+{
+	border: 1px solid #000 !important;
+}
+#export-table_paginate .paginate_button{
+	padding:5px;
+	cursor:pointer;
+	color: #aea9c3;
+}
+#export-table_paginate .paginate_button:hover{
+	color: #5d5386;
+}
+#export-table_paginate .paginate_button.disabled{
+	color:#CCC;
+	cursor:auto;
+}
+#export-table_paginate .paginate_button.current{
+	color: #5d5386;
+	cursor:auto;
+}
+
+#sorting-table_paginate .paginate_button{
+	padding:5px;
+	cursor:pointer;
+	color: #aea9c3;
+}
+#sorting-table_paginate .paginate_button:hover{
+	color: #5d5386;
+}
+#sorting-table_paginate .paginate_button.disabled{
+	color:#CCC;
+	cursor:auto;
+}
+#sorting-table_paginate .paginate_button.current{
+	color: #5d5386;
+	cursor:auto;
+}
+.suspense_debit_widget #rootwizard .tab_order li
+{
+	width:50%;
+}
+.select2 .invalid-feedback
+{
+	margin-top:-10px;
+}
+.widget-body
+{
+	background-color:#644D5A1F !important;
+}
+.page-link
+{
+	background-color:transparent !important;
+}
+.invalid-feedback
+{
+	font-size: 0.85rem;
+	margin-bottom:5px;
+}
+.form-control, .select2-selection
+{
+	border: 1px solid #000 !important;
+}
+.badge-text.warning {
+    background: #f0ad4e !important;
+}
+.peti_area_new
+{
+	display:none;
+}
+.white
+{
+	color:#FFF;
+	font-weight:bold;
+}
+tr.success
+{
+	background-color:#5cb85c;
+}
+tr.success td
+{
+	color:white;
+}
+tr.success:hover
+{
+	background-color:#156615 !important;
+}
+.del_remove, .qdel_remove
+{
+	color:#F00;
+	font-weight:bolder;
+	font-size:16px;
+}
+.del_remove:hover, .qdel_remove:hover
+{
+	cursor:pointer;
+}
+.mt-12
+{
+	margin-top:40px;
+}
+.cc_r
+{
+	margin-bottom:10px;
+}
+.exit_area_add, .new_area_add
+{
+	float:right;
+	color:#030;
+	cursor:pointer;
+	font-size:12px;
+}
+.table tbody th {
+    vertical-align: middle;
+    padding: 15px 12px 15px 12px;
+    color: #5d5386;
+    font-weight: 600;
+}
+.calender-head th .fc-button
+{
+	height: 2.75rem;
+	padding: 0 1.25rem;
+	font-size: 1rem;
+	font-weight: 500 !important;
+	white-space: nowrap;
+}
+.calender-table
+{
+	border-left: 0 hidden transparent;
+	border-right: 0 hidden transparent;
+	border-bottom: 0 hidden transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1rem;
+}
+.calender-table thead .day th
+{
+	text-align:center;
+}
+.calender-table tbody .days .f_date:hover
+{
+	background-color:#f4f4f4;
+}
+.calender-table tbody .days .c_date
+{
+	background-color:#f9f8fa;
+}
+.calender-table tbody tr td .date
+{
+	vertical-align:top;
+	text-align:center;
+	color:#5d5386;
+	font-size:1.2rem;
+}
+.daterangepicker {
+  z-index: 1600 !important;
+}
+.calender-head th
+{
+	background-color:#FFF !important;
+}
+#results
+{
+	min-height:300px;
+}
+.room-detail-ckn
+{
+	min-height:180px;
+}
+.calender-table th, .calender-table td
+{
+	width:14%;
+}
+.popper
+{
+	cursor:pointer;
+	margin-left:20px; margin-right:20px;
+}
+.popbox {
+    display: none;
+    z-index: 99999;
+	position: absolute;
+    width: 400px;
+    padding: 5px 10px;
+    background: #EEEFEB;
+    color: #000000;
+    border: 1px solid #4D4F53;
+    margin: 0px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+    box-shadow: 0px 0px 5px 0px rgba(164, 164, 164, 1);
+}
+.popbox h2 {
+    background-color: #4D4F53;
+    color: #E3E5DD;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+	text-align:center;
+}
+.popbox p
+{
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.popbox p .room_type
+{
+	width:50%;
+	text-align:left;
+}
+.popbox p .price
+{
+	width:25%;
+	text-align:right;
+}
+.popbox p .avail
+{
+	width:20%;
+	text-align:right;
+}
+.popbox p:nth-child(odd)
+{
+	background-color:#CCC;
+	padding:5px 5px 5px 5px;
+}
+.popbox p:nth-child(even)
+{
+	background-color:#EEEFEB;
+	padding:5px 5px 5px 5px;
+}
+.c_details .form-control[readonly] {
+	border:none;
+}
+.form-control[readonly] {
+  background-color: #f9f9f9;
+}
+.c-edit
+{
+	text-align:right;
+	cursor:pointer;
+	font-size:20px;
+	color:#000;
+}
+.red, .fa-trash, .la-trash, .la-remove
+{
+	color:red;
+}
+.table td, .table th
+{
+	padding:3px !important;
+}
+body {
+  scrollbar-color: #E92D96 #fff;
+}
+.la-remove
+{
+	cursor:pointer;
+	font-size:18px;
+	font-weight:bold;
+	text-align:center;
+}
+.aborder
+{
+	border: 1px solid #999;
+}
+.cborder {
+    border: 1px solid #3c8dbc;
+}
+.border_color, .border_color:focus 
+{
+	border: 1px solid #9400D3;
+}
+.table-height {
+	height:205px;
+	overflow:auto;
+}
+.table-height td, .table-height th
+{
+	padding:5px !important;
+}
+.table td {
+    border-top: 0;
+    vertical-align: middle;
+    padding: 5px;
+    color: #0f0f0f;
+}
+label
+{
+	color: #0f0f0f !important;
+	text-align:left !important;
+}
+.divFooter, .divFooterpo
+{
+	padding-top:10px;
+	margin-top:10px;
+}
+.divContent
+{
+	margin-top:20px; margin-bottom:20px;
+	page-break-after:auto;
+}
+.divHeader img
+{
+	width:90%;
+}
+.number
+{
+	padding-left:5px;
+	padding-right:5px;
+}
+.r_bc {
+    background-color: #f5f4f7;
+    color: #5d5386;
+    padding: 10px 0 5px 0;
+    margin: 0 !important;
+}
+.item_row .row {
+    margin: 8px 0 8px 0;
+}
+.company_logo {
+    border-bottom: 2pt solid #3d3872;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.invcolor, .invcolor td
+{
+	background-color:#3d3872 !important;
+	color:#FFF !important;
+}
+.invbcolor, .invbcolor td 
+{
+	background-color:#3d3872a8 !important;
+	color:#FFF !important;
+}
+input[disabled], select[disabled], input[readonly], select[readonly]
+{
+	background-color:transparent !important;
+}
+.prodilemenu a
+{
+	color:#000 !important;
+}
+@media print
+{
+	.noprint { display:none; }
+	.divHeader { position: fixed; top: 20px; left: 30px; right: 30px; height:40px; }
+	.divFooter { position: fixed; bottom: 170px; left: 30px; right: 30px; height: 190px; }
+	.divFooterpo { position: fixed; bottom: 170px; left: 30px; right: 30px; height: 190px; }
+	.divContent	{ margin-top:30px; margin-bottom:0px;	}
+	.divContent tr { page-break-after: always; }
+    .divContent tr:last-child { page-break-after: never; }
+	p { page-break-after: always; }
+	td{ padding:2px; }
+    p:last-child { page-break-after: never; }
+	.divHeader a, .divFooter a, .divFooterpo a { text-decoration:none !important; }
+	@page {	margin: 0;}
+	body {
+		margin: 0;
+		color-adjust: exact;
+      	-webkit-print-color-adjust: exact;
+   }
+}

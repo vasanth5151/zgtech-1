@@ -1,0 +1,24 @@
+/*[ hun-section-brands ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-brands.layout-1 {
+	.item-brand {
+		text-align: center;
+		padding: 30px 20px;
+		opacity: .5;
+		transition: all .2s;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+}

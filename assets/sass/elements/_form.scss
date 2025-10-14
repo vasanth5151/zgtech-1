@@ -1,0 +1,220 @@
+/*[ hun-element-form ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Type 1
+ *
+\*/
+.hun-element-form--type-1 {
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+
+	form {
+		padding: 40px;
+		background-color: rgba($main-color-02-R, $main-color-02-G, $main-color-02-B, .05);
+
+		label {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+
+			.name-field {
+				display: block;
+				margin-bottom: 5px;
+			}
+			
+			textarea,
+			input {
+				color: $text-color-01;
+				display: block;
+				height: 50px;
+				width: 100%;
+				background: #fff;
+				border-radius: 5px;
+				border: none;
+				padding: 0px 20px;
+				transition: box-shadow .3s;
+
+				&::-webkit-input-placeholder { color: #999;}
+				&:-moz-placeholder { color: #999;}
+				&::-moz-placeholder { color: #999;}
+				&:-ms-input-placeholder { color: #999;}
+
+				&:-webkit-autofill,
+				&:-webkit-autofill:hover,
+				&:-webkit-autofill:focus,
+				&:-webkit-autofill:active {
+					-webkit-text-fill-color: $text-color-01 !important;
+					transition: background-color 5000s ease-in-out 0s;
+				}
+
+				&:focus {
+					box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+				}
+			}
+
+			textarea {
+				height: auto;
+				min-height: 139px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.wrap-select {
+				display: block;
+				position: relative;
+
+				&::after {
+					content: '\f104';
+					font-family: Ionicons;
+					font-weight: 400;
+					width: 28px;
+					height: 46px;
+					display: flex;
+					align-items: center;
+					background: #fff;
+					border-radius: 5px;
+					position: absolute;
+					top: 2px;
+					right: 2px;
+					padding-top: 2px;
+					pointer-events: none;
+				}
+
+				select {
+					height: 50px;
+					width: 100%;
+					border: none;
+					background: #fff;
+					border-radius: 5px;
+					padding: 0px 40px 0px 20px;
+					transition: all .3s;
+
+					-webkit-appearance: none;
+					&::-ms-expand {
+						display: none;
+					}
+
+					&:focus {
+						outline: none;
+						box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+					}
+				}
+			}
+		}
+
+		button {
+			font-weight: 700;
+			line-height: 50px;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			display: block;
+			width: 100%;
+			border: none;
+			overflow: hidden;
+			padding: 0px 20px;
+			border-radius: 25px;
+			background-color: $main-color-02;
+			transition: all .2s;
+			margin-top: 40px;
+
+			&:hover {
+				background-color: $main-color-01;
+				color: #fff;
+			}
+		}
+	}
+
+	&.bg-02 {
+		form {
+			background-color: rgba($main-color-01-R, $main-color-01-G, $main-color-01-B, .08);
+		}
+	}
+
+	@media (max-width: 480px) {
+		form {
+			padding: 30px 25px;
+		}
+	}
+}
+
+
+/*\
+ *
+ * Type 2
+ *
+\*/
+.hun-element-form--type-2 {
+	form {
+		.row {
+			margin-right: -10px;
+			margin-left: -10px;
+
+			[class*="col-"] {
+				padding-right: 10px;
+				padding-left: 10px;
+			}
+		}
+
+		.input-field {
+			color: $text-color-01;
+			line-height: 1.5;
+			display: block;
+			width: 100%;
+			border: 1px solid #e5e5e5;
+			border-radius: 5px;
+			padding-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 20px;
+
+			&:focus {
+				border-color: $main-color-01;
+			}
+
+			&::-webkit-input-placeholder { color: #999;}
+			&:-moz-placeholder { color: #999;}
+			&::-moz-placeholder { color: #999;}
+			&:-ms-input-placeholder { color: #999;}
+
+			&:-webkit-autofill,
+			&:-webkit-autofill:hover,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill:active {
+				-webkit-text-fill-color: $text-color-01 !important;
+				transition: background-color 5000s ease-in-out 0s;
+			}
+		}
+
+		input {
+			height: 50px;
+		}
+
+		textarea {
+			min-height: 150px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		button {
+			font-weight: 700;
+			line-height: 50px;
+			color: #fff;
+			text-align: center;
+			white-space: nowrap;
+			display: block;
+			border: none;
+			overflow: hidden;
+			padding: 0px 35px;
+			border-radius: 25px;
+			background-color: $main-color-01;
+			transition: all .2s;
+
+			&:hover {
+				background-color: $main-color-02;
+			}
+		}
+	}
+}

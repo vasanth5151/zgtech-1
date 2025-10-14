@@ -1,0 +1,93 @@
+/*------------------------------------------------------------------
+Project:  SotaS
+Version:  1.0
+Last change:  16 April 2020
+Assigned to:  HunThemes
+Primary use:  HunThemes
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[LAYOUT]
+
+* body
+  + Header / header
+  + Content
+        - Section Layouts / div .name-section
+        - Sidebar / .hun-element-sidebar
+            - Search / .widget_search
+            - Categories / .widget_categories
+            - Post / .hun-widget-posts
+            - Tag / .widget_tag_cloud
+        ...
+  + Footer / footer
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[COLOR CODES]
+
+# Text Color      :  #555a64
+# Titile Color    :  #1d2a3b
+# Primary Color   :  #555cf5
+# Secondary Color :  #2c3038
+
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[TYPOGRAPHY]
+
+Body            : 16px/1.6 'Nunito', Arial, sans-serif;
+Title           : 50px/1.2 'Nunito', Arial, sans-serif;
+Paragrap        : 16px/1.6 'Nunito', Arial, sans-serif;
+Input, textarea : 16px/1.6 'Nunito', Arial, sans-serif;
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'base/_mixins';
+@import 'base/_variables';
+@import 'base/_reset';
+@import 'base/_typo';
+@import 'base/_color';
+
+@import 'header/_header';
+@import 'header/_menu-mobile';
+@import 'footer/_footer';
+
+@import 'features/_back-to-top';
+@import 'features/_pre-loading';
+@import 'features/_style-magnific-popup';
+@import 'features/_hun-button';
+@import 'features/_hun-tab';
+@import 'features/_pagination';
+
+@import 'elements/_others';
+@import 'elements/_search';
+@import 'elements/_post';
+@import 'elements/_sidebar';
+@import 'elements/_heading';
+@import 'elements/_form';
+@import 'elements/_background';
+@import 'elements/_accordion';
+
+@import 'sections/_sections';
+@import 'sections/_sec-mainslider';
+@import 'sections/_sec-heading';
+@import 'sections/_sec-image-text';
+@import 'sections/_sec-card';
+@import 'sections/_sec-icon-box';
+@import 'sections/_sec-testimonial';
+@import 'sections/_sec-mainbanner';
+@import 'sections/_sec-form';
+@import 'sections/_sec-pricing-table';
+@import 'sections/_sec-video';
+@import 'sections/_sec-blog';
+@import 'sections/_sec-pricing-plans';
+@import 'sections/_sec-counter';
+@import 'sections/_sec-brands';
+@import 'sections/_sec-page-title';
+@import 'sections/_sec-team';
+@import 'sections/_sec-archive-blog';
+@import 'sections/_sec-blog-detail';
+@import 'sections/_sec-case-study-detail';
+@import 'sections/_sec-contact';
+@import 'sections/_sec-coming-soon';
+@import 'sections/_sec-404';
+

@@ -1,0 +1,257 @@
+/*[ hun-section-icon-box ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-icon-box.layout-1 {
+	.col,
+	[class*="col-"] {
+		padding-bottom: 30px;
+	}
+
+	.item-icon-box {
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 35px 30px 35px 30px;
+		overflow: hidden;
+		position: relative;
+		z-index: 0;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			transform: translateY(-5px);
+		}
+
+		.icon-item {
+			font-size: 36px;
+			color: $main-color-01;
+			line-height: 1;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background: #fff;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+			transition: all .2s;
+		}
+
+		.text-item {
+			width: calc(100% - 80px - 25px);
+
+			.title-item {
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 1.3;
+				word-break: break-word;
+			}
+
+			.description-item {
+				word-break: break-word;
+				max-width: 360px;
+			}
+		}
+
+		.link-item {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		@media (max-width: 480px) {
+			padding-left: 15px;
+			padding-right: 15px;
+
+			.icon-item {
+				font-size: 25px;
+				width: 60px;
+				height: 60px;
+			}
+
+			.text-item {
+				width: calc(100% - 60px - 20px);
+			}
+		}
+	}
+}
+
+
+/*\
+ *
+ * Layout 2
+ *
+\*/
+.hun-section-icon-box.layout-2 {
+	.col,
+	[class*="col-"] {
+		padding-bottom: 45px;
+	}
+
+	.item-icon-box {
+		text-align: center;
+
+		.icon-item {
+			font-size: 40px;
+			color: $main-color-01;
+			line-height: 1;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background: #fff;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+			transition: all .2s;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 24px;
+		}
+
+		.text-item {
+			max-width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+
+			.title-item {
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 1.3;
+				word-break: break-word;
+				margin-bottom: 15px;
+
+				a {
+					color: inherit;
+					transition: all .2s;
+
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+
+			.description-item {
+				word-break: break-word;
+			}
+		}
+	}
+}
+
+
+/*\
+ *
+ * Layout 3
+ *
+\*/
+.hun-section-icon-box.layout-3 {
+	.inner-section {
+		.container {
+			padding-top: 45px;
+		}
+
+		[class*="col-"] {
+			padding-bottom: 45px;
+		}
+	}
+
+	.item-icon-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.icon-item {
+			font-size: 35px;
+			line-height: 1;
+			color: $main-color-01;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			box-shadow: 6px 8px 20px 0px rgba(0, 0 ,0, 0.1);
+		}
+
+		.text-item {
+			width: calc(100% - 80px - 25px);
+			align-self: center;
+
+			.title-item {
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 1.3;
+				word-break: break-word;
+				margin-bottom: 13px;
+
+				a {
+					color: inherit;
+					transition: all .2s;
+
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+
+			.description-item {
+				word-break: break-word;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.icon-item {
+				font-size: 28px;
+				width: 60px;
+				height: 60px;
+			}
+
+			.text-item {
+				width: calc(100% - 60px - 20px);
+			}
+		}
+	}
+
+	&.text-light {
+		.item-icon-box {
+			.icon-item {
+				background-color: rgba(255, 255, 255, .08);
+				box-shadow: 8px 10px 20px 0px rgba(0, 0, 0, 0.1);
+			}
+
+			.text-item {
+				.title-item {
+					color: #fff;
+
+					a {
+						&:hover {
+							color: $main-color-01;
+						}
+					}
+				}
+
+				.description-item {
+					color: #fff;
+					opacity: .8;
+				}
+			}
+		}
+	}
+}

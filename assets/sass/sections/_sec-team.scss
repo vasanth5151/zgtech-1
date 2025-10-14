@@ -1,0 +1,78 @@
+/*[ hun-section-team ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-team.layout-1 {
+	.col,
+	[class*="col-"] {
+		padding-bottom: 30px;
+	}
+
+	.member {
+		height: 100%;
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 6px 8px 20px 0px rgba(0, 0, 0, 0.1);
+		transition: all .3s ease-in-out;
+
+		.pic-member {
+			img {
+				width: 100%;
+			}
+		}
+
+		.text-member {
+			text-align: center;
+			padding: 45px 15px 25px 15px;
+			position: relative;
+
+			.social-links {
+				white-space: nowrap;
+				overflow: hidden;
+				text-align: center;
+				padding: 8px 15px;
+				max-width: calc(100% - 30px);
+				position: absolute;
+				bottom: calc(100% - 20px);
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #fff;
+				border-radius: 8px;
+				box-shadow: 6px 8px 20px 0px rgba(0, 0, 0, 0.1);
+
+				.item-social {
+					color: $title-color-01;
+					padding: 0px 8px;
+					transition: all .2s;
+
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+
+			.name-member {
+				font-size: 20px;
+				line-height: 1.3;
+				margin-bottom: 7px;
+
+				a {
+					color: inherit;
+					transition: all .2s;
+
+					&:hover {
+						color: $main-color-01;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			transform: translateY(-8px);
+		}
+	}
+}

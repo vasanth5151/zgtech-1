@@ -1,0 +1,39 @@
+/*[ hun-section-404 ]
+//////////////////////////////////////////////////////////////////*/
+
+/*\
+ *
+ * Layout 1
+ *
+\*/
+.hun-section-404.layout-1 {
+	.pic-sec {
+		text-align: center;
+		margin-bottom: 50px;
+
+		img {
+			width: 690px;
+			max-width: 100%;
+		}
+	}
+
+	.text-sec {
+		text-align: center;
+		margin-bottom: 75px;
+
+		.title {
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 1.1;
+			margin-bottom: 20px;
+
+			@media (max-width: 575px) {
+				font-size: 39px;
+			}
+		}
+
+		.description {
+			font-size: 18px;
+		}
+	}
+}
