@@ -9709,7 +9709,7 @@ padding-bottom: 40px;
   padding-top: 10px;
   left: 420px;
 }
-.tech h3::after{
+/* .tech h3::after{
   content: '';
   border-bottom: 3px solid #0B6623;
   display: block;
@@ -9719,7 +9719,7 @@ padding-bottom: 40px;
   height: 3px;
   padding-top: 10px;
   left: 605px;
-}
+} */
 .getin::after{
   content: '';
   border-bottom: 3px solid #0B6623;
