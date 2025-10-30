@@ -2112,3 +2112,38 @@
 
 $("li.nav-main-item a.nav-main-link").click(function(e) { $(".c-navigation__mobile-link").click(); });
       $(".l-header").show();
+
+
+// herosection counter animation
+  const counters = document.querySelectorAll(".counter");
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const update = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const speed = 100; // lower = faster
+        const inc = target / speed;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + inc);
+          setTimeout(update, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      update();
+    });
+  };
+
+  // Run when visible
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect();
+      }
+    });
+  });
+  observer.observe(document.querySelector(".hero-stats"));
+
