@@ -2146,4 +2146,3 @@ $("li.nav-main-item a.nav-main-link").click(function(e) { $(".c-navigation__mobi
     });
   });
   observer.observe(document.querySelector(".hero-stats"));
-
