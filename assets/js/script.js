@@ -71,4 +71,47 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
   });
 
 
+// recent blog section
+
+const blogContainer = document.getElementById('blog-container');
+const WORDPRESS_URL = "https://zerogravitytechnologies.com/blog/"; // 🔄 replace with your site
+const POSTS_API = `${WORDPRESS_URL}/wp-json/wp/v2/posts?_embed&per_page=3`;
+
+async function loadRecentBlogs() {
+  try {
+    const res = await fetch(POSTS_API);
+    const posts = await res.json();
+
+    if (!posts.length) {
+      blogContainer.innerHTML = "<p>No recent posts found.</p>";
+      return;
+    }
+
+    const blogHTML = posts.map(post => {
+      const featuredImg = post._embedded?.['wp:featuredmedia']?.[0]?.source_url || 'https://via.placeholder.com/400x250?text=No+Image';
+      const title = post.title.rendered;
+      const excerpt = post.excerpt.rendered.replace(/<[^>]+>/g, '').slice(0, 120) + '...';
+      const link = post.link;
+
+      return `
+        <article class="blog-card">
+          <img src="${featuredImg}" alt="${title}">
+          <div class="blog-content">
+            <h3>${title}</h3>
+            <p>${excerpt}</p>
+            <a href="${link}" target="_blank">Read More →</a>
+          </div>
+        </article>
+      `;
+    }).join('');
+
+    blogContainer.innerHTML = blogHTML;
+
+  } catch (error) {
+    console.error("Error fetching blog posts:", error);
+    blogContainer.innerHTML = "<p>Failed to load recent blogs. Try again later.</p>";
+  }
+}
+
+loadRecentBlogs();
 
